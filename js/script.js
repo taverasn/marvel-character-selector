@@ -14,6 +14,9 @@ let marvelData;
 // Cached Element References
 
 const $comicsEl = $('#comics');
+const $modal = $('#modal');
+
+const $name = $('#name');
 
 // Event Listeners
 
@@ -37,6 +40,10 @@ function getData() {
         });
 }
 
+function handleClick() {
+    render(true)
+}
+
 function generateUI() {
     return marvelData.data.results.map(function (marvel) {
         return `
@@ -49,10 +56,11 @@ function generateUI() {
 
 }
 
-function handleClick() {
 
-}
-
-function render() {
-    $comicsEl.html(generateUI());
+function render(click) {
+    if(click) {
+        $modal.modal();
+    } else {
+        $comicsEl.html(generateUI());
+    }
 }
