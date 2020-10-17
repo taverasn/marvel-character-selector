@@ -1,4 +1,73 @@
+:root {
+    --primary-brand-color: #ec1d25;
+    --secondary-brand-color: #fefefe;
+    --accent-color: #000000;
+    --brand-text: 'Bangers', cursive
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--brand-text);
+}
+
+main {
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: var(--accent-color);
+}
+
+main > section {
+    flex-wrap: wrap;
+}
+
+.comic {
+    font-family: var(--brand-text);
+    color: var(--primary-brand-color);
+    text-transform: capitalize;
+    width: 150px;
+    height: 300px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.comic:hover {
+    box-shadow: 1px 1px 17px 1px darkgray;
+}
+
+.outline {
+    border: 1px solid var(--accent-color);
+}
+
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-brand-color);
+    height: 65px;
+    width: 100%;
+    background-color: var(--primary-brand-color);
+}
+
+header {
+    font-family: var(--brand-text);
+    text-shadow: 1px 1px 5px var(--accent-color);
+    padding-left: 15px;
+    font-size: 50px;
+}
+
+footer {
+    justify-content: center;
 }
