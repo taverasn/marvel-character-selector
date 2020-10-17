@@ -1,8 +1,12 @@
 // Constants
 
+const {
+    openMarvelAPIKey
+} = CONFIG;
+
 const BASE_URL = 'https://gateway.marvel.com/'
 
-const API_KEY = 'd7b9e4ea4e0981b2920b81b74e9e29c4'
+const API_KEY = openMarvelAPIKey
 // Variables
 
 let marvelData;
