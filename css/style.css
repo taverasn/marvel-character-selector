@@ -27,6 +27,12 @@ main > section {
     flex-wrap: wrap;
 }
 
+article > img {
+    height: 300px;
+    width: 150px;
+    border-radius: 12px;
+}
+
 .comic {
     font-family: var(--brand-text);
     color: var(--primary-brand-color);
