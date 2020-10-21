@@ -16,7 +16,6 @@ the character in if youre interested in reading about the character.
 - CSS3
 - JavaScript
 - jQuery v3.5
-- Marvel api
 
 ## Getting Started
 
