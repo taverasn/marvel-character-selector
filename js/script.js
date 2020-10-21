@@ -29,6 +29,7 @@ const $story = $('#story');
 // Event Listeners
 
 $comicsEl.on('click', 'article', handleClick);
+
 // Functions
 
 init();
@@ -47,8 +48,8 @@ function getData(detailURL) {
         .then(function (data) {
             if(detailURL) {
 
-            marvelDetail = data;
-            render(true);
+                marvelDetail = data;
+                render(true);
 
             } else {
                 
