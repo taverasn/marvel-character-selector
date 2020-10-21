@@ -21,6 +21,7 @@ main {
     flex-grow: 1;
     flex-direction: column;
     background-color: var(--accent-color);
+    padding-bottom: 100px;
 }
 
 main > section {
@@ -41,11 +42,11 @@ article > img {
     height: 300px;
     border-radius: 12px;
     margin: 10px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 1px 1px 1px 1px blue;
 }
 
 .comic:hover {
-    box-shadow: 1px 1px 17px 1px darkgray;
+    box-shadow: 1px 1px 17px 1px blue;
 }
 
 .outline {

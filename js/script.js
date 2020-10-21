@@ -1,16 +1,20 @@
 // Constants
 
-const {
-    openMarvelAPIKey
-} = CONFIG;
+// const {
+//     openMarvelAPIKey
+// } = CONFIG;
 
-API_KEY = openMarvelAPIKey;
+// API_KEY = openMarvelAPIKey;
 
-const BASE_URL = `https://gateway.marvel.com/v1/public/characters?limit=100&offset=0&apikey=${openMarvelAPIKey}`;
+API_KEY = 'd7b9e4ea4e0981b2920b81b74e9e29c4';
+
+
+const BASE_URL = `https://gateway.marvel.com/v1/public/characters?limit=20&offset=1185&apikey=${API_KEY}`;
 // Variables
 
 let marvelData, marvelDetail
 
+var comics = [];
 
 // Cached Element References
 
@@ -18,14 +22,13 @@ const $comicsEl = $('#comics');
 const $modal = $('#modal');
 
 const $name = $('#name');
-const $desc = $('#desc')
-const $story = $('#story')
+const $desc = $('#desc');
+const $story = $('#story');
 
-var comics = [];
+
 // Event Listeners
 
 $comicsEl.on('click', 'article', handleClick);
-
 // Functions
 
 init();
