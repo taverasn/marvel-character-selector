@@ -1,13 +1,10 @@
 // Constants
 
-// const {
-//     openMarvelAPIKey
-// } = CONFIG;
+const {
+    openMarvelAPIKey
+} = CONFIG;
 
-// API_KEY = openMarvelAPIKey;
-
-API_KEY = 'd7b9e4ea4e0981b2920b81b74e9e29c4';
-
+API_KEY = openMarvelAPIKey;
 
 const BASE_URL = `https://gateway.marvel.com/v1/public/characters?limit=99&offset=1185&apikey=${API_KEY}`;
 // Variables
