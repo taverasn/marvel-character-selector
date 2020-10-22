@@ -9,7 +9,7 @@
 API_KEY = 'd7b9e4ea4e0981b2920b81b74e9e29c4';
 
 
-const BASE_URL = `https://gateway.marvel.com/v1/public/characters?limit=20&offset=1185&apikey=${API_KEY}`;
+const BASE_URL = `https://gateway.marvel.com/v1/public/characters?limit=100&offset=1185&apikey=${API_KEY}`;
 // Variables
 
 let marvelData, marvelDetail
